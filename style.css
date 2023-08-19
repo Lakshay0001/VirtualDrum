@@ -1,0 +1,120 @@
+.gradient-background {
+    background: linear-gradient(300deg, #000000, #930707, #bc0606);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.drummer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+h1 {
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    text-shadow: 5px 0 #000000;
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    gap: 20px;
+    row-gap: 0px;
+    text-align: center;
+}
+
+p {
+    border-radius: 5px;
+    font-size: x-large;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow: 2px 0 #000000;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    gap: 20px;
+    row-gap: 0px;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    border: 5px dashed rgb(249, 103, 103);
+    border-radius: 10px;
+    background-color: white;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+
+.w {
+    background-image: url(./images/tom1.png);
+}
+
+.a {
+    background-image: url(./images/tom2.png);
+}
+
+.s {
+    background-image: url(./images/tom3.png);
+}
+
+.d {
+    background-image: url(./images/tom4.png);
+}
+
+.j {
+    background-image: url(./images/crash.png);
+}
+
+.k {
+    background-image: url(./images/kick.png);
+}
+
+.l {
+    background-image: url(./images/snare.png);
+}
+
+.afterPress {
+    box-shadow: 5px 5px 5px black;
+    opacity: 0.5;
+    border: 5px solid ;
+}
+
+@media (max-width: 796px) {
+    .drummer {
+        margin: 50px;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 520px) {
+    img {
+        width: 50px;
+    }
+}
