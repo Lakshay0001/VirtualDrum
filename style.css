@@ -59,14 +59,14 @@ p {
 }
 
 button {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border: 5px dashed rgb(249, 103, 103);
     border-radius: 10px;
     background-color: white;
     color: transparent;
     background-repeat: no-repeat;
-    background-position: 20px 20px;
+    background-position: 10px 10px;
 }
 
 .w {
@@ -100,7 +100,7 @@ button {
 .afterPress {
     box-shadow: 5px 5px 5px black;
     opacity: 0.5;
-    border: 5px solid ;
+    border: 5px solid rgb(249, 103, 103);
 }
 
 @media (max-width: 796px) {
@@ -108,13 +108,17 @@ button {
         margin: 50px;
     }
 
-    img {
-        width: 100px;
+    button {
+        width: 110px;
+        height: 110px;
+        background-size: 80px;
     }
 }
 
 @media (max-width: 520px) {
-    img {
-        width: 50px;
+    button {
+        width: 80px;
+        height: 80px;
+        background-size: 50px;
     }
 }
